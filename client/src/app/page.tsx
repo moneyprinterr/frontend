@@ -156,29 +156,30 @@ function Sidebar({ isSidebarOpen }: { isSidebarOpen: boolean }) {
             {isSidebarOpen && "Paramètres"}
           </Link>
           <Link
-            href="#"
+            href="/upgrade"
             className={`flex items-center ${isSidebarOpen ? 'gap-3 px-4' : 'justify-center px-2'} py-2 text-gray-300 hover:bg-gray-700 hover:text-white rounded-lg transition-all duration-200 bg-gradient-to-r from-gray-700 to-gray-600 border border-gray-600`}
           >
             <svg xmlns="http://www.w3.org/2000/svg" width={20} height={20} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-zap">
               <path d="M13 2 3 14h9l-1 8 10-12h-9l1-8z"/>
             </svg>
-            {isSidebarOpen && "Afficher les plans"}
+            {isSidebarOpen && "View Plans"}
           </Link>
         </nav>
       </div>
       
-      {/* Centered Help icon */}
+      {/* Help section */}
       <div className="p-3 border-t border-gray-700 mb-4 mt-6">
-        <div className="flex items-center justify-center">
+        <div className="flex items-center justify-start">
           <Link
             href="#"
-            className="text-gray-300 hover:text-white transition-colors"
+            className="text-gray-300 hover:text-white transition-colors flex items-center gap-2"
           >
             <svg xmlns="http://www.w3.org/2000/svg" width={20} height={20} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
               <circle cx="12" cy="12" r="10"></circle>
               <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path>
               <line x1="12" y1="17" x2="12.01" y2="17"></line>
             </svg>
+            {isSidebarOpen && "Help"}
           </Link>
         </div>
       </div>
